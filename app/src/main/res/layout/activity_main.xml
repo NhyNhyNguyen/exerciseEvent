@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Các kiểu lập trình sự kiện"
+            android:textSize="40px"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#00BD8F"/>
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40px"
+                android:background="#00BD8F"
+                android:layout_weight="1"
+                android:id="@+id/tv_numa"
+                android:layout_below="@+id/tv_name"
+            />
+            <EditText
+                android:id="@+id/et_numa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_name"
+                android:layout_weight="4" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số b: "
+                android:textSize="30px"
+                android:layout_weight="1"
+                android:id="@+id/tv_numb"
+                />
+            <EditText
+                android:id="@+id/et_numb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="40px"
+            android:background="#00BD8F"
+            android:layout_marginTop="200dp"
+            android:textColor="#ffffff"
+            />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
